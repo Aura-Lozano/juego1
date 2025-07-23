@@ -1,11 +1,11 @@
 let repartio = false;
 let cartas = [];
-let contadores = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 function repartir() {
     let tablero = document.getElementById("tablero");
     tablero.innerHTML = ""
     const TOTAL_CARTAS = 10;
+    cartas = [];
     for (let i = 0; i < TOTAL_CARTAS; i++) {
         let carta = document.createElement("img");
         let indice = Math.floor(Math.random() * 52) + 1;
