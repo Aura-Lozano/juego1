@@ -1,0 +1,69 @@
+body{
+background: linear-gradient(to bottom, #a285d6, #f1cade);
+min-height: 100vh;
+}
+
+h1{
+    color: whitesmoke;
+}
+.encabezado{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(89, 22, 128, 0.7);
+    
+    border-radius: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+.botones{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    
+}
+.boton{
+    background-color: rgb(211, 101, 184);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s;
+    border-radius: 15px;
+}
+.boton:hover{
+    background-color: rgb(245, 227, 241);
+    transform: translateY(-10px);
+}
+.botón{
+    background-color: rgb(46, 204, 64);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s;
+    border-radius: 15px;
+
+}
+.botón:hover{
+    background-color: rgb(113, 220,145);
+    transform: translateY(-10px);
+}
+
+.tablero{
+    position: relative; /* Es importante que sea relative para que las cartas absolutas se posicionen dentro de ella */
+    min-height: 200px; /* Altura mínima para que sea visible antes de repartir */
+    width: 90%; /* Ancho de la mesa */
+    max-width: 1200px; /* Ancho máximo para pantallas grandes */
+    background: linear-gradient(to bottom, #430aad, #9e4572);
+    border: 5px solid #311375; /* Borde marrón para la mesa */
+    border-radius: 20px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 10px 20px rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+    display: flex; /* Añadir flexbox para organizar las cartas como alternativa */
+    justify-content: center; /* Centrar las cartas en la mesa */
+    align-items: center; /* Alinear cartas al inicio verticalmente */
+    flex-wrap: wrap; /* Permitir que las cartas pasen a la siguiente línea */
+    gap: 10px; /* Espacio entre las cartas cuando no están superpuestas */
+    padding: 20px; /* Espacio interno de la mesa */
+    min-height: 200px; /* Asegura que la mesa tenga altura visible */
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    /*transition: TOTAL_CARTAS 1s;  */
+}
+
